@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Responsive Site</title>
+    <link rel="stylesheet" href="./assets/style/index.css">
+</head>
+<body>
+    <header>
+        <div class="background-img"></div>
+        <section class="info-header">
+            <h1>Welcome to Acme Web Solutions</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci eum error earum soluta voluptatum
+            nisi laboriosam eos saepe asperiores dolorum.</p>
+            <a href="#section-b" class="button">Read More</a>
+        </section>
+    </header>
+    <main>
+        <section id="section-a" class="flex">
+            <div class="column-container">
+                <h2>Web & Application Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde officiis magnam laborum ipsa distinctio odio
+                vero dolores dicta aliquam aperiam repellendus.Perferendis officiis deserunt velit voluptas nobis sequi animi totam, accusantium, ex eius quia, natus quo?</p>
+            </div>
+        </section>
+        <section id="section-b" class="flex">
+            <div class="info-container-b">
+                <div class="info-wrapper">
+                    <div class="info-img">
+                        <source media="(min-width: 699)" srcset="./assets/images/web-dev-small.jpg">
+                        <img src="./assets/images/web-dev.jpg" alt="Web Dev">
+                    </div>
+                    <div class="info-b">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info-img">
+                        <source media="(min-width: 699)" srcset="./assets/images/mobile-app-small.jpg">
+                        <img src="./assets/images/mobile-app.jpg" alt="Mobile App">
+                    </div>
+                    <div class="info-b">
+                        <h3>Mobile Applications</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info-img">
+                        <source media="(min-width: 699)" srcset="./assets/images/tech-marketing-small.jpg">
+                        <img src="./assets/images/tech-marketing.jpg" alt="Tech Marketing">
+                    </div>
+                    <div class="info-b">
+                        <h3>Tech Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-c" class="flex">
+            <div class="info-container-c">
+                <h2>We handle all of your digital needs</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam rerum vel earum error fugiat cupiditate, dolore eius! Minus, explicabo.</p>
+            </div>
+        </section>
+        <section id="section-d" class="flex">
+            <div>
+                <h2>Contact Us</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et voluptas obcaecati unde fuga.</p>
+                <p>contact@acmewebsolutions.test</p>
+            </div>
+            <div>
+                <h2>About Our Company</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum porro deserunt, deleniti,quae facere repudiandae, officiis est exercitationem nobis iusto doloremque! Soluta excepturi inaut suscipit amet temporibus quo?</p>
+            </div>
+        </section>
+    </main>
+    <footer id="footer-main" class="flex">
+        <div>Acme Web Solutions</div>
+        <div>Project by <a href="https://www.freshcode.training/" target="_blank">FreshCode</a></div>
+    </footer>
+</body>
+</html>
