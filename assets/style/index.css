@@ -98,6 +98,7 @@ main{
 }
 .column-container{
     width: 80vw;
+    /* width: 60%; */
 }
 .column-container > h2{
     margin: 20px auto;
@@ -250,6 +251,9 @@ img{
     .content-text-a{
         width: 300px;
     }
+    #section-b p{
+        font-size: 1em;
+    }
 }
 @media screen and (max-width: 450px){
     .column-container{
@@ -262,6 +266,9 @@ img{
     #section-a p{
         font-size: 0.7em;
     }
+    #section-b p{
+        font-size: 0.9em;
+    }
     .content-text-a{
         width: 90%;
     }
@@ -269,9 +276,9 @@ img{
         width: 100%;
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 406px){
     body{
-        width: 30vh;
+        width: 32vh;
     }
     #section-a h2{
         font-size: 0.8em;
@@ -281,7 +288,7 @@ img{
         font-size: 0.6em;
     }
     #section-b p{
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
     #section-c p{
         font-size: 0.8em;
@@ -295,5 +302,11 @@ img{
     #section-d p{
         font-size: 0.4em;
     }
+}
+@media screen and (max-width: 330px){
+    .background-img{
+        width: 400px;
+    }
+        
 }
 /* Adaptive-Close */
