@@ -4,7 +4,7 @@
 }
 h2{
     display: block;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
@@ -20,7 +20,7 @@ p{
 }
 /* Background */
 body{
-    margin: 0;
+    margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     background: #333;
     color: #fff;
@@ -51,10 +51,10 @@ header{
 }
 .info-header{
     width: 700px;
-    padding: 0 1.5em 70px;
+    padding: 0 1.5em 1em;
 }
 h1{
-    font-size: 35px;
+    font-size: 1.1em;
     margin: 0;
     padding: 1em 0;
 }
@@ -93,14 +93,26 @@ main{
     background: #eaeaea;
     padding-bottom: 2em;
 }
-.column-container > h2{
-    column-span: all;
+#section-a{
+    height: 250px;
 }
 .column-container{
-    width: 1300px;
-    height: 180px;
+    width: 80vw;
+}
+.column-container > h2{
+    margin: 20px auto;
+    width: 400px;
+}
+.content-text-a{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1em;
     columns: 2;
-    column-gap: 20px;
+    column-gap: 2em;
+}
+.content-text-a > p{
+    padding: 0;
+    margin: 0;
 }
 #section-b{
     padding-top: 2em;
@@ -109,7 +121,6 @@ main{
 .info-img{
     height: 200px;
     width: 100%;
-    display: block;
 }
 img{
     width: inherit;
@@ -125,7 +136,7 @@ img{
     justify-content: space-evenly;
 }
 .info-wrapper{
-    width: 270px;
+    width: 30%;
     height: 500px;
     background-color: #fff;
 }
@@ -138,13 +149,19 @@ img{
     height: 180px;
 }
 #section-d{
+    font-size: 1em;
     width: 100%;
     height: 300px;
     color: #fff;
+    overflow-x:hidden;
 }
 #section-d > div{
     width: 50%;
+    height: 300px;
     padding: 2em;
+}
+#section-d > div > p{
+    font-size: 1.3vh;
 }
 #section-d > div:first-child{
     background: #2690d4;
@@ -167,13 +184,39 @@ img{
 }
 /* Footer-Close */
 /* Adaptive */
+@media screen and (max-width: 1200px){
+    #section-a p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 800px){
+    #section-a p{
+        font-size: 14px;
+    }
+    #section-b p{
+        font-size: 16px;
+    }
+}
 @media screen and (max-width: 700px){
     *{
+        padding: 0;
         font-size: 18px;
     }
     .column-container{
+        width: 80%;
+    }
+    .content-text-a{
         columns: unset;
-        width: 600px;
+        column-gap: 0;
+    }
+    #section-a p{
+        width: 95%;
+    }
+    .info-b h3{
+        font-size: 24px;
+    }
+    #section-b p{
+        font-size: 22px;
     }
     .info-container-b{
         flex-wrap: wrap;
@@ -186,7 +229,7 @@ img{
         height: 650px;
     }
     #section-d{
-        display: block;
+        display: block; /* тут ставлю display: block; так как если убрать то ломается*/
         width: 100%;
         height: 500px;
     }
@@ -194,19 +237,63 @@ img{
         width: 100%;
         height: 250px;
     }
-    #section-d > div:nth-child(2){
-        position: relative;
-    }
     #footer-main{
         padding-top: 1em;
-        display: block;
-        position: absolute;
-        right: 0;
-        left: 0;
+        display: block;   /* тут ставлю display: block; так как если убрать то ломается*/
     }
     #footer-main > div{
         text-align: center;
         width: 100%;
+    }
+}
+@media screen and (max-width: 560px){
+    .content-text-a{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 450px){
+    .column-container{
+        width: 60%;
+    }
+    #section-a h2{
+        font-size: 0.9em;
+        margin-left: -70px;
+    }
+    #section-a p{
+        font-size: 0.7em;
+    }
+    .content-text-a{
+        width: 90%;
+    }
+    #section-b{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 320px){
+    body{
+        width: 30vh;
+    }
+    #section-a h2{
+        font-size: 0.8em;
+        margin-left: -100px;
+    }
+    #section-a p{
+        font-size: 0.6em;
+    }
+    #section-b p{
+        font-size: 0.7em;
+    }
+    #section-c p{
+        font-size: 0.8em;
+    }
+    #section-d{
+        height: 600px;
+    }
+    #section-d div{
+        height: 50%;
+    }
+    #section-d p{
+        font-size: 0.4em;
     }
 }
 /* Adaptive-Close */
